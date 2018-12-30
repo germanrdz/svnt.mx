@@ -58,6 +58,12 @@ a:hover {
 
 h1 img {
   height: 30px;
+  cursor: pointer;
+}
+
+.tour-dates {
+  margin-left: -20px;
+  margin-top: -50px;
 }
 
 .footer {

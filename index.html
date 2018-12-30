@@ -21,7 +21,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>SVNT - Anaeróbico (Video Oficial)</title>
+    <title>SVNT</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -40,15 +40,17 @@
   <body>
     <div class="page-content">
       <h1>
-        <img src="images/SVNT.png" alt="SVNT" title="SVNT" />
+        <img src="images/SVNT.png" alt="SVNT" title="SVNT" onclick="javascript:SVNT.nextBackground();" />
       </h1>
 
       <h2>Cosmogonía</h2>
       <iframe style="border: 0; width: 100%; height: 472px;" src="https://bandcamp.com/EmbeddedPlayer/album=2884069647/size=large/bgcol=333333/linkcol=e99708/artwork=none/transparent=true/" seamless><a href="http://svntmx.bandcamp.com/album/cosmogon-a">Cosmogonía by SVNT</a></iframe>
 
       <h2>Fechas</h2>
-      <a href="https://www.songkick.com/artists/9382304" class="songkick-widget" data-theme="light" data-track-button="on" data-detect-style="true" data-font-color="#FFF" data-background-color="transparent"></a>
-      <script src="http://widget.songkick.com/9382304/widget.js"></script>
+      <div class="tour-dates">
+        <a href="https://www.songkick.com/artists/9382304" class="songkick-widget" data-theme="light" data-track-button="on" data-detect-style="true" data-font-color="#FFF" data-background-color="transparent"></a>
+        <script src="http://widget.songkick.com/9382304/widget.js"></script>
+      </div>
 
       <h3>Redes</h3>
 
@@ -71,7 +73,6 @@
       <p>
         Escribenos a svntmx@gmail.com ✍️
       </p>
-
 
       <div class="footer">
         <p>
@@ -177,6 +178,41 @@
           }
         }
       }
+    </script>
+
+    <script>
+      var SVNT = {
+        backgrounds: ['1.png', '2.png', '3.png'],
+        currentBackground: 0,
+
+        nextBackground: function() {
+          var newBackground = SVNT.currentBackground + 1;
+
+          if (newBackground < SVNT.backgrounds.length) {
+            SVNT.currentBackground = newBackground;
+          }
+          else {
+            SVNT.currentBackground = 0;
+          }
+
+          SVNT.refreshBackground();
+        },
+
+        refreshBackground: function() {
+          var url = SVNT.backgrounds[SVNT.currentBackground];
+          document.body.style.backgroundImage = "url('images/" + url + "')";
+        },
+
+        generateRandomNumber: function() {
+          var min = 0;
+          var max = SVNT.backgrounds.length - 1;
+          return min + Math.floor(Math.random() * (max - min + 1));
+        }
+      };
+
+      // randomizes initial background
+      SVNT.currentBackground = SVNT.generateRandomNumber();
+      SVNT.nextBackground();
     </script>
   </body>
 

@@ -1,12 +1,24 @@
 import styled from "@emotion/styled";
+import { css } from "@emotion/react";
+
+const squareStyle = css`
+  width: 300px;
+  height: 300px;
+
+  margin: 5px;
+`;
 
 const Container = styled.div`
+  ${({ square }) => (square ? "display: inline-block" : ``)};
+
   .video-container {
     overflow: hidden;
     position: relative;
     width: 100%;
 
     max-width: 900px;
+
+    ${({ square }) => (square ? squareStyle : ``)}
   }
 
   .video-container::after {
@@ -24,8 +36,8 @@ const Container = styled.div`
   }
 `;
 
-const Video = ({ videoId }) => (
-  <Container>
+const Video = ({ videoId, square = false }) => (
+  <Container square={square}>
     <div class="video-container">
       <iframe
         src={`https://www.youtube.com/embed/${videoId}`}

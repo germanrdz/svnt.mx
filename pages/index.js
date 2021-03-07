@@ -16,6 +16,18 @@ const Home = () => (
       un niño con sindrome Savant.
     </P>
     <P>
+      <iframe
+        src="https://open.spotify.com/follow/1/?uri=spotify:artist:0kyOA8rutuOL3DwaveHsnG&size=detail&theme=dark&show-count=0"
+        width="300"
+        height="56"
+        scrolling="no"
+        frameborder="0"
+        style={{ border: "none", overflow: "hidden" }}
+        allowtransparency="true"
+      ></iframe>
+    </P>
+
+    <P>
       <a href="https://open.spotify.com/artist/0kyOA8rutuOL3DwaveHsnG?si=UxzKAelZTgGsd7ho2Af80w">
         Spotify
       </a>
@@ -32,7 +44,16 @@ const Home = () => (
     <h2>Videos</h2>
     <Video videoId="Y-L-_g_rqog" />
 
-    <h2>Discografía</h2>
+    <h2>
+      Energía Oscura <small>(2021)</small>
+    </h2>
+    <Video square videoId="_v9LA9EdBwE" />
+    <Video square videoId="xloitqXKZnI" />
+
+    <h2>
+      Cosmogonia <small>(2017)</small>
+    </h2>
+    <Video square videoId="xkvzACdyhy0" />
 
     <h2>Contacto</h2>
     <P>

@@ -1,65 +1,45 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import styled from "@emotion/styled";
 
-export default function Home() {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+import P from "../components/styled/P";
+import Video from "../components/Video";
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+const Container = styled.div`
+  width: 1200px;
+  margin: 0 auto;
+`;
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+const Home = () => (
+  <Container>
+    <h1>SVNT</h1>
+    <P>
+      SVNT (Savant) es una banda indie mexicana que existe en la imaginación de
+      un niño con sindrome Savant.
+    </P>
+    <P>
+      <a href="https://open.spotify.com/artist/0kyOA8rutuOL3DwaveHsnG?si=UxzKAelZTgGsd7ho2Af80w">
+        Spotify
+      </a>
+      ,<a href="https://www.instagram.com/svntmx/">Instagram</a>,
+      <a href="https://www.facebook.com/SVNTMX">Facebook</a>,
+      <a href="https://www.youtube.com/channel/UCeOSUURloyKLh7-GBetT4SA">
+        Youtube
+      </a>
+    </P>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+    <h2>Último lanzamiento</h2>
+    <Video videoId="xloitqXKZnI" />
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+    <h2>Videos</h2>
+    <Video videoId="Y-L-_g_rqog" />
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+    <h2>Discografía</h2>
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
+    <h2>Contacto</h2>
+    <P>
+      Te gustaría contactar a la banda? escribenos a{" "}
+      <a href="mailto:svntmx@gmail.com">svntmx@gmail.com</a>
+    </P>
+  </Container>
+);
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
-}
+export default Home;

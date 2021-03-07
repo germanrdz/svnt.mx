@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 
+import SpotifyFollow from "../components/SpotifyFollow";
 import P from "../components/styled/P";
 import Video from "../components/Video";
 
@@ -15,17 +16,7 @@ const Home = () => (
       SVNT (Savant) es una banda indie mexicana que existe en la imaginación de
       un niño con sindrome Savant.
     </P>
-    <P>
-      <iframe
-        src="https://open.spotify.com/follow/1/?uri=spotify:artist:0kyOA8rutuOL3DwaveHsnG&size=detail&theme=dark&show-count=0"
-        width="300"
-        height="56"
-        scrolling="no"
-        frameborder="0"
-        style={{ border: "none", overflow: "hidden" }}
-        allowtransparency="true"
-      ></iframe>
-    </P>
+    <SpotifyFollow />
 
     <P>
       <a href="https://open.spotify.com/artist/0kyOA8rutuOL3DwaveHsnG?si=UxzKAelZTgGsd7ho2Af80w">
@@ -51,7 +42,7 @@ const Home = () => (
     <Video square videoId="xloitqXKZnI" />
 
     <h2>
-      Cosmogonia <small>(2017)</small>
+      Cosmogonía <small>(2017)</small>
     </h2>
     <Video square videoId="xkvzACdyhy0" />
 

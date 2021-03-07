@@ -14,6 +14,10 @@ const styles = css`
     font-family: "DotGothic16", sans-serif;
     font-size: 24px;
     color: white;
+
+    @media only screen and (max-device-width: 480px) {
+      font-size: 16px;
+    }
   }
 
   a {

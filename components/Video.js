@@ -38,12 +38,12 @@ const Container = styled.div`
 
 const Video = ({ videoId, square = false }) => (
   <Container square={square}>
-    <div class="video-container">
+    <div className="video-container">
       <iframe
         src={`https://www.youtube.com/embed/${videoId}`}
-        frameborder="0"
+        frameBorder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
+        allowFullScreen
       ></iframe>
     </div>
   </Container>

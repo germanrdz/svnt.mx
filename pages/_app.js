@@ -24,6 +24,10 @@ const App = ({ Component, pageProps }) => (
         href="/favicon-16x16.png"
       />
       <link rel="manifest" href="/site.webmanifest" />
+      <meta
+        name="google-site-verification"
+        content="hu6OYTLC1K459qiNH4jym90ueRe3eAfjQ2ES4Ouvo4A"
+      />
     </Head>
     <Component {...pageProps} />
   </>

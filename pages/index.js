@@ -9,6 +9,10 @@ const Container = styled.div`
   margin: 0 auto;
 `;
 
+const Contacto = styled.div`
+  margin-top: 6em;
+`;
+
 const Home = () => (
   <Container>
     <h1>SVNT</h1>
@@ -24,9 +28,7 @@ const Home = () => (
       </a>
       ,<a href="https://www.instagram.com/svntmx/">Instagram</a>,
       <a href="https://www.facebook.com/SVNTMX">Facebook</a>,
-      <a href="https://www.youtube.com/channel/UCeOSUURloyKLh7-GBetT4SA">
-        Youtube
-      </a>
+      <a href="https://www.youtube.com/c/SVNTMX">Youtube</a>
     </P>
 
     <h2>Último lanzamiento</h2>
@@ -38,7 +40,7 @@ const Home = () => (
     <h2>
       Energía Oscura <small>(2021)</small>
     </h2>
-    <Video square videoId="_v9LA9EdBwE" />
+    <Video square videoId="MYdFA6MF2Qk" />
     <Video square videoId="xloitqXKZnI" />
 
     <h2>
@@ -46,11 +48,11 @@ const Home = () => (
     </h2>
     <Video square videoId="xkvzACdyhy0" />
 
-    <h2>Contacto</h2>
-    <P>
-      Te gustaría contactar a la banda? escribenos a{" "}
-      <a href="mailto:svntmx@gmail.com">svntmx@gmail.com</a>
-    </P>
+    <Contacto>
+      <P>
+        Si gustas contactar a la banda <a href="/contacto">da click aqui</a>
+      </P>
+    </Contacto>
   </Container>
 );
 

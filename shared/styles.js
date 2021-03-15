@@ -32,6 +32,11 @@ const styles = css`
       border-bottom: 2px solid;
     }
   }
+
+  h2 small {
+    color: darkmagenta;
+    font-size: 0.6em;
+  }
 `;
 
 export const globalStyles = <Global styles={styles} />;

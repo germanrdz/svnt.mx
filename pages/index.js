@@ -58,7 +58,7 @@ const Home = () => (
 
     <Section>
       <h2>Último lanzamiento</h2>
-      <Video videoId="S9RpodZGNT8" />
+      <Video videoId="GArHxU5PL3o" />
     </Section>
 
     <Section>

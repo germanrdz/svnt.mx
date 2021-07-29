@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 
 const Container = styled.div`
   margin-top: 3em;
+  margin-bottom: 1em;
 `;
 
 const SpotifyFollow = () => (

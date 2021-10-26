@@ -64,7 +64,7 @@ const Home = () => (
         <a href="https://www.youtube.com/c/SVNTMX">Youtube</a>
       </P>
 
-      <TourBox />
+      {/* <TourBox /> */}
     </Section>
 
     <Section>

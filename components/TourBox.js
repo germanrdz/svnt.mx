@@ -5,11 +5,10 @@ const TourBox = () => (
       className="songkick-widget"
       data-theme="light"
       data-font-color="#000"
+      data-track-button="on"
+      data-detect-style="true"
       data-background-color="#fff"
       data-locale="es"
-      style={{
-        border: 0,
-      }}
     >
       <h2>Próximas Fechas</h2>
     </a>

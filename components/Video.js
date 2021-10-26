@@ -2,8 +2,8 @@ import styled from "@emotion/styled";
 import { css } from "@emotion/react";
 
 const squareStyle = css`
-  width: 280px;
-  height: 280px;
+  width: 284px;
+  height: 284px;
 
   margin: 5px;
 `;

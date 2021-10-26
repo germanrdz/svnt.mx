@@ -8,7 +8,7 @@ const Container = styled.div`
 const SpotifyFollow = () => (
   <Container>
     <iframe
-      src="https://open.spotify.com/follow/1/?uri=spotify:artist:0kyOA8rutuOL3DwaveHsnG&size=detail&theme=dark&show-count=0"
+      src="https://open.spotify.com/follow/1/?uri=spotify:artist:0kyOA8rutuOL3DwaveHsnG&size=detail&theme=light&show-count=0"
       width="300"
       height="56"
       scrolling="no"

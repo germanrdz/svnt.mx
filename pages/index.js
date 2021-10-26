@@ -21,9 +21,13 @@ const Center = styled.div`
 const Home = () => (
   <Container>
     <Section>
-      <Center>
+      <Center
+        style={{
+          marginBottom: "32px",
+        }}
+      >
         <Image
-          src="/symbol.png"
+          src="/symbol-white.png"
           alt="SVNT"
           title="SVNT"
           width={100}
@@ -41,9 +45,9 @@ const Home = () => (
         universo imaginario que cuenta la historia de un niño autista llamado
         Dante.
       </P>
-      <P>
+      {/* <P>
         <SpotifyFollow />
-      </P>
+      </P> */}
       <br />
       <P>
         <h2>Redes</h2>
@@ -58,7 +62,7 @@ const Home = () => (
 
     <Section>
       <h2>Último lanzamiento</h2>
-      <Video videoId="hvU4g0-9pI4" />
+      <Video videoId="QcpKqa5dAsk" />
     </Section>
 
     <Section>
@@ -69,8 +73,9 @@ const Home = () => (
 
     <Section>
       <h2>
-        Energía Oscura <small>Sencillos 2021</small>
+        Energía Oscura <small>2021</small>
       </h2>
+      <Video square videoId="QcpKqa5dAsk" /> {/* Madre */}
       <Video square videoId="hvU4g0-9pI4" /> {/* Duele */}
       <Video square videoId="S9RpodZGNT8" /> {/* Será por eso */}
       <Video square videoId="MYdFA6MF2Qk" /> {/* Energía Oscura */}
@@ -79,7 +84,7 @@ const Home = () => (
 
     <Section>
       <h2>
-        Cosmogonía <small>Disco Completo 2017</small>
+        Cosmogonía <small>2018</small>
       </h2>
       <Video square videoId="xkvzACdyhy0" />
     </Section>

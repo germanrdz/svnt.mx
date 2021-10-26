@@ -6,10 +6,6 @@ const Container = styled.div`
     color: white !important;
   }
 
-  a {
-    color: white;
-  }
-
   iframe {
     margin-top: 1em;
   }

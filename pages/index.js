@@ -47,10 +47,9 @@ const Home = () => (
         de un niño con sindrome Savant.
       </P>
       <P>
-        Con sus visuales oscuros, un arte surreal con una marcada influencia de
-        Salvador Dalí y con un show en vivo teatral tipo David Bowie, SVNT ha
-        logrado combinar sonidos Soft Dark, Indie Pop y Synth Wave para crear un
-        universo imaginario que cuenta la historia de un niño autista llamado
+        Con sus visuales oscuros, un arte surreal y con un show en vivo teatral,
+        SVNT ha logrado combinar sonidos Soft Dark, Indie Pop y Synth Wave para
+        crear un universo imaginario que cuenta la historia de un niño llamado
         Dante.
       </P>
 

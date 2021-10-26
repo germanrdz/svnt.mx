@@ -2,8 +2,8 @@ import styled from "@emotion/styled";
 import { css } from "@emotion/react";
 
 const squareStyle = css`
-  width: 300px;
-  height: 300px;
+  width: 280px;
+  height: 280px;
 
   margin: 5px;
 `;
@@ -16,7 +16,7 @@ const Container = styled.div`
     position: relative;
     width: 100%;
 
-    max-width: 900px;
+    max-width: 1200px;
 
     ${({ square }) => (square ? squareStyle : ``)}
   }

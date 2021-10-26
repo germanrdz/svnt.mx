@@ -4,6 +4,7 @@ import Image from "next/image";
 import SpotifyFollow from "../components/SpotifyFollow";
 import P from "../components/styled/P";
 import Video from "../components/Video";
+import TourBox from "../components/TourBox";
 
 const Container = styled.div`
   max-width: 1200px;
@@ -16,6 +17,12 @@ const Section = styled.section`
 
 const Center = styled.div`
   text-align: center;
+`;
+
+const HeaderGrid = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  grid-gap: 2em;
 `;
 
 const Home = () => (
@@ -34,6 +41,7 @@ const Home = () => (
           height={100}
         />
       </Center>
+
       <P>
         SVNT (Savant) es una banda Indie mexicana que existe en la imaginación
         de un niño con sindrome Savant.
@@ -45,10 +53,7 @@ const Home = () => (
         universo imaginario que cuenta la historia de un niño autista llamado
         Dante.
       </P>
-      {/* <P>
-        <SpotifyFollow />
-      </P> */}
-      <br />
+
       <P>
         <h2>Redes</h2>
         <a href="https://open.spotify.com/artist/0kyOA8rutuOL3DwaveHsnG?si=UxzKAelZTgGsd7ho2Af80w">
@@ -58,6 +63,8 @@ const Home = () => (
         <a href="https://www.facebook.com/SVNTMX">Facebook</a>,
         <a href="https://www.youtube.com/c/SVNTMX">Youtube</a>
       </P>
+
+      <TourBox />
     </Section>
 
     <Section>
